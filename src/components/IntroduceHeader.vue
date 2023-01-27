@@ -5,20 +5,20 @@
       <p>Junior Web Developer powered by passion<span>.</span></p>
       <Button text="Find out more →" />
     </div>
-    <div class="introduce-wrapper__icon">
-      <img src="@/assets/images/programmer.svg" alt="" />
-    </div>
+    <IntroduceIcon />
   </div>
 </template>
 
 <script>
 import Button from "@/components/Button.vue";
+import IntroduceIcon from "@/components/IntroduceIcon.vue";
 
 export default {
   name: "IntroduceHeader",
   components: {
     // eslint-disable-next-line vue/no-reserved-component-names
     Button,
+    IntroduceIcon,
   },
 };
 </script>
@@ -26,10 +26,10 @@ export default {
 <style lang="scss">
 .introduce-wrapper {
   display: grid;
-  grid-template-columns: 1fr 0.75fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   column-gap: 5rem;
-  height: 70vh;
+  height: 80vh;
   align-items: center;
   justify-items: center;
   &__text {
@@ -44,13 +44,6 @@ export default {
     p {
       font-family: "Indie Flower", cursive;
       font-size: 2rem;
-    }
-  }
-  &__icon {
-    justify-self: start;
-    img {
-      width: 20rem;
-      height: 20rem;
     }
   }
 }
