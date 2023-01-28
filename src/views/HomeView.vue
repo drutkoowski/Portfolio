@@ -1,19 +1,24 @@
 <template>
   <main class="container">
     <Navbar />
-    <IntroduceHeader />
+    <IntroduceHeader v-if="slide === 0" />
   </main>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
 import IntroduceHeader from "@/components/IntroduceHeader.vue";
+import useSiteStore from "@/stores/site";
+import { mapState } from "pinia";
 
 export default {
   name: "HomeView",
   components: {
     Navbar,
     IntroduceHeader,
+  },
+  computed: {
+    ...mapState(useSiteStore, ["slide"]),
   },
 };
 </script>

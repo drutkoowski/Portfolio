@@ -4,7 +4,7 @@
       <img src="@/assets/images/pl-flag.png" class="icon" />
       <img src="@/assets/images/en-flag.png" class="icon" />
     </li>
-    <li>Github</li>
+    <li><a href="https://github.com/drutkoowski">Github</a></li>
     <li>Resume</li>
     <li>About</li>
     <li><img src="@/assets/images/code.svg" alt="" class="icon code" /></li>
