@@ -27,6 +27,7 @@ ul {
     text-transform: uppercase;
     color: var(--white);
     transition: all 0.3s ease-in;
+    cursor: pointer;
     &:not(:first-of-type):hover {
       transform: scale(1.03);
     }

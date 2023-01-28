@@ -2,12 +2,14 @@
   <main class="container">
     <Navbar />
     <IntroduceHeader v-if="slide === 0" />
+    <InfoSlider v-else />
   </main>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
 import IntroduceHeader from "@/components/IntroduceHeader.vue";
+import InfoSlider from "@/components/InfoSlider.vue";
 import useSiteStore from "@/stores/site";
 import { mapState } from "pinia";
 
@@ -16,6 +18,7 @@ export default {
   components: {
     Navbar,
     IntroduceHeader,
+    InfoSlider,
   },
   computed: {
     ...mapState(useSiteStore, ["slide"]),
