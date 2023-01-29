@@ -16,7 +16,7 @@
         <img src="@/assets/images/Sass.svg" alt="Sass" />
       </div>
       <div class="item" style="--d: -8s">
-        <img src="@/assets/images/vuejs.svg" alt="Vue" />
+        <img src="@/assets/images/vue.svg" alt="Vue" />
       </div>
       <div class="item" style="--d: -10s">
         <img src="@/assets/images/html5.svg" alt="Html" />

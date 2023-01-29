@@ -10,10 +10,11 @@
     <div class="slider-container__content">
       <About v-if="slide === 1" />
       <Technologies v-if="slide === 2" />
+      <Projects v-if="slide === 3" />
     </div>
     <div class="slider-container__arrow">
       <img
-        v-if="slide < 4"
+        v-if="slide < 3"
         src="@/assets/images/right-arrow.svg"
         alt="Right arrow"
         style="margin-left: auto"
@@ -25,14 +26,17 @@
 
 <script>
 import About from "@/components/About.vue";
+import Projects from "@/components/Projects.vue";
 import Technologies from "@/components/Technologies.vue";
 import useSiteStore from "@/stores/site";
 import { mapState } from "pinia";
+
 export default {
   name: "InfoSlider",
   components: {
     About,
     Technologies,
+    Projects,
   },
   computed: {
     ...mapState(useSiteStore, ["slide"]),
@@ -40,11 +44,15 @@ export default {
   methods: {
     decrease() {
       const store = useSiteStore();
-      store.decreaseSlide();
+      if (store.slide >= 1) {
+        store.decreaseSlide();
+      }
     },
     increase() {
       const store = useSiteStore();
-      store.increaseSlide();
+      if (store.slide <= 3) {
+        store.increaseSlide();
+      }
     },
   },
 };
@@ -52,22 +60,26 @@ export default {
 
 <style lang="scss" scoped>
 .slider-container {
-  height: 80vh;
+  min-height: 80vh;
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr;
   margin-top: 5rem;
+  margin-bottom: 1rem;
   &__content {
     color: white;
     display: grid;
+    grid-gap: 3rem;
+    min-height: 80vh;
     grid-template-columns: 1fr 1fr;
     &__description {
       display: flex;
       flex-direction: column;
+      min-height: 80vh;
     }
     &__images {
+      min-height: 80vh;
       height: 100%;
       width: 100%;
-      background-color: antiquewhite;
     }
   }
   &__arrow {

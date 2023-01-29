@@ -42,5 +42,8 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (max-height: 850px) {
+    overflow-y: auto;
+  }
 }
 </style>

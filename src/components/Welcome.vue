@@ -1,9 +1,11 @@
 <template>
-  <div class="introduce-wrapper">
+  <div class="introduce-wrapper" ref="component">
     <div class="introduce-wrapper__text">
-      <h1>Hi<span>,</span> I am Damian<span>.</span></h1>
-      <p>Junior Web Developer powered by passion<span>.</span></p>
-      <Button text="Find out more →" @click.prevent="findOut" />
+      <h1>
+        {{ $t("welcome.hi") }}<span>,</span> {{ $t("welcome.introduce") }}<span>.</span>
+      </h1>
+      <p>{{ $t("welcome.desc") }}<span>.</span></p>
+      <Button :text="$t('welcome.findOut')" @click.prevent="findOut" />
     </div>
     <IntroduceIcon />
   </div>
@@ -26,6 +28,9 @@ export default {
       const store = useSiteStore();
       store.increaseSlide();
     },
+  },
+  mounted() {
+    this.$refs.component.classList.add("slideLeft");
   },
 };
 </script>

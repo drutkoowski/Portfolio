@@ -1,19 +1,23 @@
 <template>
   <ul>
     <li>
-      <img src="@/assets/images/pl-flag.png" class="icon" />
-      <img src="@/assets/images/en-flag.png" class="icon" />
+      <img src="@/assets/images/pl-flag.png" class="icon" @click.prevent="changeLocale" />
+      <img src="@/assets/images/en-flag.png" class="icon" @click.prevent="changeLocale" />
     </li>
-    <li><a href="https://github.com/drutkoowski">Github</a></li>
-    <li>Resume</li>
-    <li>About</li>
+    <li><a href="https://github.com/drutkoowski" target="_blank">Github</a></li>
+    <li>{{ $t("navbar.resume") }}</li>
+    <li>{{ $t("navbar.contact") }}</li>
     <li><img src="@/assets/images/code.svg" alt="" class="icon code" /></li>
   </ul>
 </template>
-
 <script>
 export default {
   name: "Navbar",
+  methods: {
+    changeLocale() {
+      this.$i18n.locale = this.$i18n.locale === "pl" ? "en" : "pl";
+    },
+  },
 };
 </script>
 

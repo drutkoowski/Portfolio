@@ -1,0 +1,15 @@
+{
+  "welcome": {
+    "hi": "Hi",
+    "introduce": "I am Damian",
+    "desc": "Junior Web Developer powered by passion",
+    "findOut": "Find out more →"
+  },
+  "navbar": {
+    "resume": "resume",
+    "contact": "contact"
+  },
+  "about": {
+    "heading": "About me"
+  }
+}

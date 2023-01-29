@@ -6,7 +6,6 @@ export default defineStore("site", {
   }),
   actions: {
     increaseSlide() {
-      console.log("+");
       this.slide += 1;
     },
     decreaseSlide() {

@@ -1,15 +1,15 @@
 <template>
-  <div class="slider-container__content__description">
+  <div class="slider-container__content__description" ref="desc">
     <h1>Technologies</h1>
     <div class="slider-container__content__description__container">
       <div>
         <TechHeading text="Frontend" imgSrc="frontend.svg" />
         <ul>
           <TechElement text="HTML5" imgSrc="html5.svg" />
-          <TechElement text="CSS3" imgSrc="css.svg" />
+          <TechElement text="CSS3" imgSrc="css3.svg" />
           <TechElement text="SCSS" imgSrc="sass.svg" />
           <TechElement text="Javascript" imgSrc="javascript.svg" />
-          <TechElement text="Vue" imgSrc="vuejs.svg" />
+          <TechElement text="Vue" imgSrc="vue.svg" />
           <TechElement text="Vite" imgSrc="vite.svg" />
           <TechElement text="Bootstrap" imgSrc="bootstrap.svg" />
           <TechElement text="Tailwind" imgSrc="tailwind.svg" />
@@ -63,6 +63,9 @@ export default {
   },
   created() {
     this.yearsOld = new Date().getFullYear() - 2000;
+  },
+  mounted() {
+    this.$refs.desc.classList.add("slideLeft");
   },
 };
 </script>

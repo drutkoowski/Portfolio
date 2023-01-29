@@ -25,3 +25,33 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.slideLeft {
+  animation-duration: 2s;
+  animation-name: slideoutLeft;
+}
+
+.slideRight {
+  animation-duration: 2s;
+  animation-name: slideoutRight;
+}
+
+@keyframes slideoutRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideoutLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
