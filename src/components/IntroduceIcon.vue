@@ -1,25 +1,25 @@
 <template>
   <div class="introduce-wrapper__icon">
-    <img src="@/../images/icon.svg" class="introduce-wrapper__icon__centered" />
+    <img src="/images/icon.svg" class="introduce-wrapper__icon__centered" />
 
     <div class="introduce-wrapper__icon__container">
       <div class="item" style="--d: 0s">
-        <img src="@/../images/javascript.svg" alt="Javascript" />
+        <img src="/images/javascript.svg" alt="Javascript" />
       </div>
       <div class="item" style="--d: -2s">
-        <img src="@/../images/python.svg" alt="Python" />
+        <img src="/images/python.svg" alt="Python" />
       </div>
       <div class="item" style="--d: -4s">
-        <img src="@/../images/django.svg" alt="Django" />
+        <img src="/images/django.svg" alt="Django" />
       </div>
       <div class="item" style="--d: -6s">
-        <img src="@/../images/sass.svg" alt="Sass" />
+        <img src="/images/sass.svg" alt="Sass" />
       </div>
       <div class="item" style="--d: -8s">
-        <img src="@/../images/vue.svg" alt="Vue" />
+        <img src="/images/vue.svg" alt="Vue" />
       </div>
       <div class="item" style="--d: -10s">
-        <img src="@/../images/html5.svg" alt="Html" />
+        <img src="/images/html5.svg" alt="Html" />
       </div>
     </div>
   </div>

@@ -1,13 +1,13 @@
 <template>
   <ul>
     <li>
-      <img src="@/../images/pl-flag.png" class="icon" @click.prevent="changeLocale" />
-      <img src="@/../images/en-flag.png" class="icon" @click.prevent="changeLocale" />
+      <img src="/images/pl-flag.png" class="icon" @click.prevent="changeLocale" />
+      <img src="/images/en-flag.png" class="icon" @click.prevent="changeLocale" />
     </li>
     <li><a href="https://github.com/drutkoowski" target="_blank">Github</a></li>
     <li>{{ $t("navbar.resume") }}</li>
     <li>{{ $t("navbar.contact") }}</li>
-    <li><img src="@/../images/code.svg" alt="" class="icon code" /></li>
+    <li><img src="/images/code.svg" alt="" class="icon code" /></li>
   </ul>
 </template>
 <script>
