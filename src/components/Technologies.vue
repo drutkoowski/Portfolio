@@ -1,6 +1,6 @@
 <template>
   <div class="slider-container__content__description" ref="desc">
-    <h1>Technologies</h1>
+    <h1>{{ $t("technologies.heading") }}</h1>
     <div class="slider-container__content__description__container">
       <div>
         <TechHeading text="Frontend" imgSrc="frontend.svg" />
@@ -32,7 +32,7 @@
         </ul>
       </div>
       <div>
-        <TechHeading text="Tools" imgSrc="tools.svg" />
+        <TechHeading :text="$t('technologies.tools')" imgSrc="tools.svg" />
         <ul>
           <TechElement text="Axios" imgSrc="axios.svg" />
           <TechElement text="Figma" imgSrc="figma.svg" />

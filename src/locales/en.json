@@ -10,6 +10,42 @@
     "contact": "contact"
   },
   "about": {
-    "heading": "About me"
+    "heading": "About me",
+    "iam": "I am",
+    "baseInfo": "year old programmer from Jaroslaw, Poland.",
+    "goal": "My goal is to create high-quality web applications, which, above all, would be useful for potential users.",
+    "desc": "First of all, I always put as much of myself as possible into all myprojects, trying to show my dedication to what I do by doing so.",
+    "character": "I am characterized primarily by commitment, creativity and willingness to learn.",
+    "techstack": "My tech stack consists mostly of Python, Javascript and CSS - more specifically their frameworks.",
+    "languages": "I speak two languages - English (B2) and Polish (Native)"
+  },
+  "technologies": {
+    "heading": "Technologies",
+    "tools": "Tools"
+  },
+  "projects": {
+    "heading": "Projects",
+    "more": "and more",
+    "description": "Description",
+    "technologies": "Technologies",
+    "links": "Links",
+    "repo": "Repository",
+    "photo": "Photo",
+    "of": "of",
+    "nutri": {
+      "description": "Nutri is an app created for people who want to learn more about their nutrition and the exercises they do. It allows you to track your progress compared to personalized goals including data visualization."
+    },
+    "converseo": {
+      "description": "Converseo is an web app allowing the users to communicate with each other and look for new acquaintances. The connection between users was made using WebSockets, which allows instant interaction."
+    },
+    "ecommerce": {
+      "description": "Django Ecommerce is an e-commerce (online store) web application. Thanks to this application users can order products, which might be easily entered by the site administrator (the seller) using the admin panel, which has been specially adapted for this purpose."
+    },
+    "musicly": {
+      "description": "Musicly is a web application for music management. The user has the ability to create an account that allows him/her to add music, as well as to search for other users' tracks, listen to them and comment on them."
+    },
+    "instaclone": {
+      "description": "InstaClone is a social media application that allows users to contact their friends in an easy and fast way. They can also view other users' posts and stories or narrow down the results to only the people they follow. The person using the app can update data about himself to better show himself to others. Add photos, including profile picture, bio, or relationships visible to others. In addition, each user can like or comment on other users posts."
+    }
   }
 }

@@ -3,17 +3,17 @@
     <h1>{{ $t("about.heading") }}</h1>
     <div>
       <p>
-        I am {{ yearsOld }} year old programmer from Jaroslaw, Poland. <br />
-        My goal is to create high-quality web applications, which, above all, would be
-        useful for potential users. <br />
-        <br />
-        First of all, I always put as much of myself as possible into all my projects,
-        trying to show my dedication to what I do by doing so. <br />
-        I am characterized primarily by commitment, creativity and willingness to learn.
+        {{ $t("about.iam") }} {{ yearsOld }} {{ $t("about.baseInfo") }} <br />
+        {{ $t("about.goal") }}
         <br />
         <br />
-        My tech stack consists mostly of Python, Javascript and CSS - more specifically
-        their frameworks. <br />I speak two languages - English (B2) and Polish (Native).
+        {{ $t("about.desc") }}
+        <br />
+        {{ $t("about.character") }}
+        <br />
+        <br />
+        {{ $t("about.techstack") }} <br />
+        {{ $t("about.languages") }}
       </p>
     </div>
   </div>
@@ -38,7 +38,15 @@ export default {
 <style lang="scss" scoped>
 .slider-container__content__description {
   height: 70vh;
-  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+  }
   h1 {
     font-size: 3.5em;
     color: var(--orange);

@@ -10,6 +10,42 @@
     "contact": "Kontakt"
   },
   "about": {
-    "heading": "About me"
+    "heading": "O mnie",
+    "iam": "Jestem",
+    "baseInfo": "letnim programistą z Jarosławia, Podkarpackie.",
+    "goal": "Moim celem jest tworzenie wysokojakościowych aplikacji webowych, które przede wszystkim, bedą użyteczne dla swoich użytkowników.",
+    "desc": "W każdy swój projekt wkładam duży wysiłek, starając się pokazać swoje umiejętności.",
+    "character": "Cechuje mnie przede wszystkim zaangażowanie, kreatywność i chęć nauki.",
+    "techstack": "Mój stack składa się głównie z Pythona, Javascript oraz CSS - a raczej z ich frameworków.",
+    "languages": "Mówię w dwóch językach - angielskim (B2) oraz polskim (ojczysty)"
+  },
+  "technologies": {
+    "heading": "Technologie",
+    "tools": "Narzędzia"
+  },
+  "projects": {
+    "heading": "Projekty",
+    "more": "i więcej",
+    "description": "Opis",
+    "technologies": "Technologie",
+    "links": "Linki",
+    "repo": "Repozytorium",
+    "photo": "Zdjęcie",
+    "of": "z",
+    "nutri": {
+      "description": "Nutri jest aplikacją stworzoną dla ludzi, którzy chcą dowiedzieć się więcej o sposobie swojego odżywiania oraz stylu życia. Pozwala na śledzenie progresu zachodzącego w Twoim ciele, w nawiązaniu do celów ustalonych na początku, wraz z możliwością ich zwizualizowania."
+    },
+    "converseo": {
+      "description": "Converseo to aplikacja webowa umożliwiająca użytkownikom komunikację między sobą i zawieranie nowych znajomości. Połączenie pomiędzy użytkownikami zostało wykonane przy użyciu WebSockets, co umożliwia natychmiastową interakcję."
+    },
+    "ecommerce": {
+      "description": "Django Ecommerce to aplikacja typu e-commerce (sklep online). Dzięki niej użytkownicy mogą zamawiać produkty, które są zamieszczane w prosty sposób przez administratora (sprzedawcę), używając panelu administracyjnego, który został specjalnie do tego dostosowany."
+    },
+    "musicly": {
+      "description": "Musicly to aplikacja webowa dla zarządzania muzyką. Użytkownik ma możliwość założenia konta, które pozwala mu na dodawanie muzyki, a także na wyszukiwanie utworów innych użytkowników, ich odsłuchiwanie i komentowanie."
+    },
+    "instaclone": {
+      "description": "InstaClone to aplikacja na styl popularnych mediów społecznościowych (Instagram), która pozwala użytkownikom kontaktować się ze znajomymi w łatwy i szybki sposób. Mogą oni dodawać oraz przeglądać posty lub historie innych użytkowników a także zawęzić wyniki do tylko tych osób, które śledzą."
+    }
   }
 }

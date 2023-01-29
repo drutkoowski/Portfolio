@@ -1,6 +1,6 @@
 <template>
   <div class="slider-container__content__description" ref="desc">
-    <h1>Projects</h1>
+    <h1>{{ $t("projects.heading") }}</h1>
     <div class="slider-container__content__description__bookmark">
       <ul>
         <li class="selected" ref="nutri" @click.prevent="handleChange('Nutri')">
@@ -20,11 +20,16 @@
         </li>
         <br />
         <li>
-          <a href="https://github.com/drutkoowski" target="_blank">...and more</a>
+          <a href="https://github.com/drutkoowski" target="_blank"
+            >... {{ $t("projects.more") }}</a
+          >
         </li>
       </ul>
     </div>
-    <ProjectInfo :description="description" :technologies="technologies" />
+    <ProjectInfo
+      :description="$t(`projects.${name.toLowerCase()}.description`)"
+      :technologies="technologies"
+    />
   </div>
   <div class="slider-container__content__images" ref="images">
     <ImageSlider
@@ -87,8 +92,6 @@ export default {
       if (projectName === "Nutri") {
         this.name = "Nutri";
         this.$refs.nutri.classList.add("selected");
-        this.description =
-          "Nutri is an app created for people who want to learn more about their nutrition and the exercises they do. It allows you to track your progressagainst goals personalized for the user who has access to data visualization.";
         this.technologies = [
           "Python",
           "Django",
@@ -117,8 +120,6 @@ export default {
       if (projectName === "Converseo") {
         this.name = "Converseo";
         this.$refs.converseo.classList.add("selected");
-        this.description =
-          "Converseo is an web app allowing the users to communicate with each other and look for new acquaintances. It allows you to search for people to talk with you.";
         this.technologies = [
           "Python",
           "Django",
@@ -153,8 +154,6 @@ export default {
       if (projectName === "Ecommerce") {
         this.name = "Ecommerce";
         this.$refs.ecommerce.classList.add("selected");
-        this.description =
-          "Django Ecommerce is an e-commerce (online store) web application. Thanks to this application users can order products, which can be easily entered by the site administrator (the seller) using the admin panel, which has been specially adapted for this purpose.";
         this.technologies = [
           "Python",
           "Django",
@@ -183,8 +182,6 @@ export default {
       if (projectName === "Musicly") {
         this.name = "Musicly";
         this.$refs.musicly.classList.add("selected");
-        this.description =
-          "Musicly is a web application for music management. The user has the ability to create an account that allows him/her to add music, as well as to search for other users' tracks, listen to them and comment on them.";
         this.technologies = [
           "Vue",
           "Vite",

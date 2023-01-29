@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2>Description</h2>
+    <h2>{{ $t("projects.description") }}</h2>
     <p>{{ description }}</p>
-    <h2>Technologies</h2>
+    <h2>{{ $t("projects.technologies") }}</h2>
     <div class="technologies">
       <TechElement
         v-for="tech in technologies"
@@ -33,7 +33,7 @@ export default {
     getPath(tech) {
       const array = ["Daphne", "WSGI/ASGI", "Channels", "DRF"];
       if (array.includes(tech)) return "django.svg";
-      else return tech.toLowerCase() + ".svg";
+      return tech.toLowerCase() + ".svg";
     },
   },
 };
