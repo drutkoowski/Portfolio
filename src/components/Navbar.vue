@@ -1,11 +1,13 @@
 <template>
   <ul>
     <li>
-      <img src="/images/pl-flag.png" class="icon" @click.prevent="changeLocale" />
-      <img src="/images/en-flag.png" class="icon" @click.prevent="changeLocale" />
+      <img src="/images/pl-flag.png" id="pl" class="icon" @click.prevent="changeLocale" />
+      <img src="/images/en-flag.png" id="en" class="icon" @click.prevent="changeLocale" />
     </li>
     <li><a href="https://github.com/drutkoowski" target="_blank">Github</a></li>
-    <li>{{ $t("navbar.resume") }}</li>
+    <li>
+      <a :href="pdfHref" target="_blank">{{ $t("navbar.resume") }}</a>
+    </li>
     <li>{{ $t("navbar.contact") }}</li>
     <li><img src="/images/code.svg" alt="" class="icon code" /></li>
   </ul>
@@ -13,9 +15,22 @@
 <script>
 export default {
   name: "Navbar",
+  data() {
+    return {
+      pdfHref:
+        this.$i18n.locale === "pl"
+          ? "/images/Damian_Rutkowski_CV_pl_compressed.pdf"
+          : "/images/Damian_Rutkowski_CV_en_compressed.pdf",
+    };
+  },
   methods: {
-    changeLocale() {
-      this.$i18n.locale = this.$i18n.locale === "pl" ? "en" : "pl";
+    changeLocale(e) {
+      const lang = e.target.id;
+      this.$i18n.locale = lang === "pl" ? "en" : "pl";
+      this.pdfHref =
+        lang === "pl"
+          ? "/images/Damian_Rutkowski_CV_en_compressed.pdf"
+          : "/images/Damian_Rutkowski_CV_pl_compressed.pdf";
     },
   },
 };
