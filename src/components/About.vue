@@ -18,7 +18,7 @@
     </div>
   </div>
   <div class="slider-container__content__images" ref="images">
-    <img src="@/assets/images/my_photo.png" alt="My Photo" />
+    <img src="/images/my_photo.png" alt="My Photo" />
   </div>
 </template>
 

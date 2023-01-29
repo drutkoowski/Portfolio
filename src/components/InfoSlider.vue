@@ -1,11 +1,7 @@
 <template>
   <div class="slider-container">
     <div class="slider-container__arrow">
-      <img
-        src="@/assets/images/left-arrow.svg"
-        alt="Left arrow"
-        @click.prevent="decrease"
-      />
+      <img src="@/../images/left-arrow.svg" alt="Left arrow" @click.prevent="decrease" />
     </div>
     <div class="slider-container__content">
       <About v-if="slide === 1" />
@@ -15,7 +11,7 @@
     <div class="slider-container__arrow">
       <img
         v-if="slide < 3"
-        src="@/assets/images/right-arrow.svg"
+        src="@/../images/right-arrow.svg"
         alt="Right arrow"
         style="margin-left: auto"
         @click.prevent="increase"

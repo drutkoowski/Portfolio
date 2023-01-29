@@ -3,20 +3,20 @@
     <img
       v-if="slider !== 0"
       class="slider-container__content__images__slider__left-arrow"
-      src="@/assets/images/left-arrow.svg"
+      src="/images/left-arrow.svg"
       alt="Left arrow"
       @click.prevent="slideLeft"
     />
 
     <img
       class="slider-container__content__images__slider__image"
-      :src="images[slider]"
+      :src="'/images/' + images[slider]"
       :alt="name"
     />
     <img
       v-if="slider !== images.length - 1"
       class="slider-container__content__images__slider__right-arrow"
-      src="@/assets/images/right-arrow.svg"
+      src="/images/right-arrow.svg"
       alt="Right arrow"
       @click.prevent="slideRight"
     />

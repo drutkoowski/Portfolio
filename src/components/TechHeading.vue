@@ -10,7 +10,7 @@ export default {
   name: "TechHeading",
   props: ["imgSrc", "text"],
   created() {
-    this.path = "/src/assets/images/" + this.imgSrc;
+    this.path = "images/" + this.imgSrc;
   },
 };
 </script>

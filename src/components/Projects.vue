@@ -69,14 +69,14 @@ export default {
         "AWS",
       ],
       images: [
-        "/src/assets/images/nutri5.png",
-        "/src/assets/images/nutri6.png",
-        "/src/assets/images/nutri7.png",
-        "/src/assets/images/nutri0.png",
-        "/src/assets/images/nutri1.png",
-        "/src/assets/images/nutri2.png",
-        "/src/assets/images/nutri3.png",
-        "/src/assets/images/nutri4.png",
+        "nutri5.png",
+        "nutri6.png",
+        "nutri7.png",
+        "nutri0.png",
+        "nutri1.png",
+        "nutri2.png",
+        "nutri3.png",
+        "nutri4.png",
       ],
       demoLink: "https://nutri-django.herokuapp.com",
       repoLink: "https://github.com/drutkoowski/Nutri-Django",
@@ -105,14 +105,14 @@ export default {
           "AWS",
         ];
         this.images = [
-          "/src/assets/images/nutri5.png",
-          "/src/assets/images/nutri6.png",
-          "/src/assets/images/nutri7.png",
-          "/src/assets/images/nutri0.png",
-          "/src/assets/images/nutri1.png",
-          "/src/assets/images/nutri2.png",
-          "/src/assets/images/nutri3.png",
-          "/src/assets/images/nutri4.png",
+          "nutri5.png",
+          "nutri6.png",
+          "nutri7.png",
+          "nutri0.png",
+          "nutri1.png",
+          "nutri2.png",
+          "nutri3.png",
+          "nutri4.png",
         ];
         this.demoLink = "https://nutri-django.herokuapp.com";
         this.repoLink = "https://github.com/drutkoowski/Nutri-Django";
@@ -141,12 +141,12 @@ export default {
           "Daphne",
         ];
         this.images = [
-          "/src/assets/images/converseo0.png",
-          "/src/assets/images/converseo1.png",
-          "/src/assets/images/converseo2.png",
-          "/src/assets/images/converseo3.png",
-          "/src/assets/images/converseo4.png",
-          "/src/assets/images/converseo5.png",
+          "converseo0.png",
+          "converseo1.png",
+          "converseo2.png",
+          "converseo3.png",
+          "converseo4.png",
+          "converseo5.png",
         ];
         this.demoLink = "https://nutri-django.herokuapp.com";
         this.repoLink = "https://github.com/drutkoowski/Nutri-Django";
@@ -166,14 +166,14 @@ export default {
           "AWS",
         ];
         this.images = [
-          "/src/assets/images/ecommerce0.png",
-          "/src/assets/images/ecommerce1.png",
-          "/src/assets/images/ecommerce2.png",
-          "/src/assets/images/ecommerce3.png",
-          "/src/assets/images/ecommerce4.png",
-          "/src/assets/images/ecommerce5.png",
-          "/src/assets/images/ecommerce6.png",
-          "/src/assets/images/ecommerce7.png",
+          "ecommerce0.png",
+          "ecommerce1.png",
+          "ecommerce2.png",
+          "ecommerce3.png",
+          "ecommerce4.png",
+          "ecommerce5.png",
+          "ecommerce6.png",
+          "ecommerce7.png",
         ];
         this.demoLink =
           "http://django-env.eba-f3bedqv2.eu-central-1.elasticbeanstalk.com/accounts/login/";
@@ -193,11 +193,11 @@ export default {
           "Axios",
         ];
         this.images = [
-          "/src/assets/images/musicly0.png",
-          "/src/assets/images/musicly1.png",
-          "/src/assets/images/musicly2.png",
-          "/src/assets/images/musicly3.png",
-          "/src/assets/images/musicly4.png",
+          "musicly0.png",
+          "musicly1.png",
+          "musicly2.png",
+          "musicly3.png",
+          "musicly4.png",
         ];
         this.demoLink = "https://musicly-ten.vercel.app";
         this.repoLink = "https://github.com/drutkoowski/Musicly";
@@ -219,14 +219,14 @@ export default {
           "Heroku",
         ];
         this.images = [
-          "/src/assets/images/instaclone0.png",
-          "/src/assets/images/instaclone1.png",
-          "/src/assets/images/instaclone2.png",
-          "/src/assets/images/instaclone3.png",
-          "/src/assets/images/instaclone4.png",
-          "/src/assets/images/instaclone5.png",
-          "/src/assets/images/instaclone6.png",
-          "/src/assets/images/instaclone7.png",
+          "instaclone0.png",
+          "instaclone1.png",
+          "instaclone2.png",
+          "instaclone3.png",
+          "instaclone4.png",
+          "instaclone5.png",
+          "instaclone6.png",
+          "instaclone7.png",
         ];
         this.demoLink = "https://thawing-scrubland-61997.herokuapp.com";
         this.repoLink = "https://github.com/drutkoowski/django-social-media";

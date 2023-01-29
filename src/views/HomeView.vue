@@ -38,12 +38,20 @@ export default {
       rgba(45, 46, 48, 0.45),
       rgba(32, 30, 32, 0.65)
     ),
-    url("@/assets/images/background-image.jpg");
+    url("/images/background-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media screen and (max-height: 850px) {
-    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
   }
 }
 </style>
