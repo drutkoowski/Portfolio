@@ -8,7 +8,9 @@
     <li>
       <a :href="pdfHref" target="_blank">{{ $t("navbar.resume") }}</a>
     </li>
-    <li>{{ $t("navbar.contact") }}</li>
+    <li>
+      <a href="mailto:d.rutkowski2000@gmail.com">{{ $t("navbar.contact") }}</a>
+    </li>
     <li><img src="/images/code.svg" alt="" class="icon code" /></li>
   </ul>
 </template>

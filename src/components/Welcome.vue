@@ -2,7 +2,8 @@
   <div class="introduce-wrapper" ref="component">
     <div class="introduce-wrapper__text">
       <h1>
-        {{ $t("welcome.hi") }}<span>,</span> {{ $t("welcome.introduce") }}<span>.</span>
+        {{ $t("welcome.hi") }}<span>,</span> {{ $t("welcome.introduce")
+        }}<span>.</span>
       </h1>
       <p>{{ $t("welcome.desc") }}<span>.</span></p>
       <Button :text="$t('welcome.findOut')" @click.prevent="findOut" />
@@ -29,7 +30,7 @@ export default {
       store.increaseSlide();
     },
   },
-  mounted() {
+  async mounted() {
     this.$refs.component.classList.add("slideLeft");
   },
 };
