@@ -43,6 +43,19 @@ ul {
   display: flex;
   font-size: 2.5rem;
   list-style: none;
+  @media screen and (max-width: 1200px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 0 0;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+    align-items: center;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 0.7rem;
+  }
   li {
     margin: 0 1rem;
     text-transform: uppercase;
@@ -52,6 +65,9 @@ ul {
     &:not(:first-of-type):hover {
       transform: scale(1.03);
     }
+    @media screen and (max-width: 400px) {
+      margin: 0 5px;
+    }
   }
 }
 
@@ -60,6 +76,12 @@ ul li:nth-of-type(2) {
 }
 ul li:last-of-type {
   margin-right: 5rem;
+  @media screen and (max-width: 800px) {
+    margin-right: 1rem;
+  }
+  @media screen and (max-width: 350px) {
+    margin-right: 5px;
+  }
 }
 
 ul li:not(:first-of-type):after {
@@ -81,6 +103,17 @@ ul li:not(:first-of-type):hover::after {
   border-radius: 5px;
   margin: 0 0.25rem;
   transition: all 0.3s ease-in;
+  @media screen and (max-width: 1200px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  @media screen and (max-width: 400px) {
+    margin-top: -5px;
+  }
   &:hover {
     transform: scale(1.15);
   }
@@ -93,6 +126,12 @@ ul li:not(:first-of-type):hover::after {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
   transform: scale(1);
   animation: pulse 2s infinite;
+  @media screen and (max-width: 400px) {
+    margin-top: 1px;
+  }
+  @media screen and (max-width: 350px) {
+    margin-top: 2px;
+  }
 }
 @keyframes pulse {
   0% {

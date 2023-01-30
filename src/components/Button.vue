@@ -25,6 +25,10 @@ button {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   animation: pulse 8s infinite;
+  @media screen and (max-width: 1100px) {
+    font-size: 1rem;
+    height: 3.5rem;
+  }
   &:hover {
     transform: scale(1.05);
     background-color: var(--white);

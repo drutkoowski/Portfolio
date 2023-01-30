@@ -40,6 +40,10 @@ export default {
 .introduce-wrapper__icon {
   grid-column: 2/3;
   position: relative;
+  @media screen and (max-width: 600px) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
   &__centered {
     width: 5rem;
     height: 5rem;
@@ -47,6 +51,16 @@ export default {
     top: 40%;
     left: 40%;
     transform: scale(2);
+    @media screen and (max-width: 1100px) {
+      top: 30%;
+      left: 30%;
+      transform: scale(1.2);
+    }
+    @media screen and (max-width: 900px) {
+      top: 30%;
+      left: 30%;
+      transform: scale(0.8);
+    }
   }
   &__container {
     width: 200px;
@@ -58,6 +72,15 @@ export default {
     place-content: center;
     border-radius: 50%;
     transform: scale(2);
+    @media screen and (max-width: 900px) {
+      top: 30%;
+      left: 30%;
+      transform: scale(1.4);
+    }
+    @media screen and (max-width: 500px) {
+      margin: 30px auto 0 auto;
+      transform: scale(1);
+    }
     .item {
       grid-area: 1/1;
       line-height: 30px;
@@ -67,6 +90,10 @@ export default {
       img {
         width: 3rem;
         height: 3rem;
+        @media screen and (max-width: 1100px) {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
       }
     }
   }
