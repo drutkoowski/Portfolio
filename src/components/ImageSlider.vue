@@ -69,8 +69,14 @@ export default {
     margin: 0 0;
     color: var(--orange);
   }
+  @media screen and (max-width: 1000px) {
+    margin-top: 2rem;
+  }
   ul {
     padding: 0 10px;
+    @media screen and (max-width: 1200px) {
+      padding: 0 0;
+    }
     li {
       cursor: pointer;
       transition: all 0.3s ease-in;
@@ -89,7 +95,6 @@ export default {
   align-self: center;
   flex-wrap: wrap;
   position: relative;
-
   &__description {
     position: absolute;
     bottom: -10%;
@@ -98,11 +103,20 @@ export default {
     left: 0;
     right: 0;
     text-align: center;
+    @media screen and (max-width: 1000px) {
+      bottom: -15%;
+    }
+    @media screen and (max-width: 600px) {
+      bottom: -35%;
+    }
   }
   &__image {
     width: 100%;
     height: 100%;
     border: 2px solid var(--orange);
+    @media screen and (max-width: 500px) {
+      height: auto;
+    }
   }
   &__left-arrow {
     position: absolute;
@@ -117,6 +131,14 @@ export default {
     &:hover {
       transform: scale(1.15);
     }
+    @media screen and (max-width: 600px) {
+      height: 2rem;
+      width: 2rem;
+    }
+    @media screen and (max-width: 400px) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
   &__right-arrow {
     position: absolute;
@@ -130,6 +152,14 @@ export default {
       contrast(103%);
     &:hover {
       transform: scale(1.15);
+    }
+    @media screen and (max-width: 600px) {
+      height: 2rem;
+      width: 2rem;
+    }
+    @media screen and (max-width: 400px) {
+      height: 1.5rem;
+      width: 1.5rem;
     }
   }
 }

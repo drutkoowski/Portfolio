@@ -64,6 +64,11 @@ export default {
       grid-row: 2/3;
       justify-self: unset;
     }
+    @media screen and (max-width: 300px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     h1 {
       font-size: 4rem;
@@ -75,6 +80,9 @@ export default {
       }
       @media screen and (max-width: 600px) {
         font-size: 2.75rem;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 2rem;
       }
       @media screen and (max-width: 300px) {
         font-size: 1.75rem;

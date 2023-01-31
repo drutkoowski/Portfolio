@@ -47,21 +47,60 @@ export default {
     width: 0;
     height: 0;
   }
+  @media screen and (max-width: 600px) {
+    grid-row: 2/3;
+  }
   h1 {
     font-size: 3.5em;
     color: var(--orange);
     margin-top: 0;
+    @media screen and (max-width: 600px) {
+      font-size: 2.5em;
+    }
   }
   div {
     font-size: 2em;
+    @media screen and (max-width: 1000px) {
+      font-size: 1.5em;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 1.1em;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 0.85em;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 0.7em;
+    }
   }
 }
 .slider-container__content__images {
+  @media screen and (max-width: 1000px) {
+    display: flex;
+  }
+  @media screen and (max-width: 600px) {
+    grid-row: 1/2;
+  }
   img {
     height: 70vh;
     background-size: cover;
     background-position: center;
     border: 2px solid var(--orange);
+    @media screen and (max-width: 1300px) {
+      width: 30rem;
+      height: auto;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 15rem;
+      height: auto;
+      display: block;
+      margin: auto auto;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      width: 100%;
+      max-width: 15rem;
+    }
   }
 }
 </style>

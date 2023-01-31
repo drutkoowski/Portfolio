@@ -43,6 +43,7 @@ export default {
   @media screen and (max-width: 600px) {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin-top: 5rem;
   }
   &__centered {
     width: 5rem;

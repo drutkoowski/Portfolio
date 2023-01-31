@@ -238,6 +238,11 @@ export default {
 
 <style lang="scss" scoped>
 .slider-container__content__description {
+  @media screen and (max-width: 1200px) {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+
   h1 {
     font-size: 3.5em;
     color: var(--orange);
@@ -257,6 +262,9 @@ export default {
           color: var(--orange);
           transform: scale(1.05);
         }
+        @media screen and (max-width: 700px) {
+          display: block;
+        }
         span {
           color: var(--orange);
         }
@@ -268,6 +276,10 @@ export default {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.3fr;
+  @media screen and (max-width: 1200px) {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
 }
 .selected {
   color: var(--orange);

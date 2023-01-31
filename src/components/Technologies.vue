@@ -73,21 +73,34 @@ export default {
 <style lang="scss" scoped>
 .slider-container__content__description {
   grid-column: 1/3;
+  @media screen and (max-width: 1000px) {
+    justify-content: center;
+  }
   h1 {
     font-size: 3.5em;
     color: var(--orange);
+    @media screen and (max-width: 1100px) {
+      font-size: 2.5em;
+    }
   }
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    @media screen and (max-width: 700px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    @media screen and (max-width: 400px) {
+      height: 100%;
+    }
     div {
-      h3 {
-        font-size: 2.5em;
-      }
       ul {
         padding: 0 0;
         margin: 3rem 0;
         list-style: none;
+        @media screen and (max-width: 1000px) {
+          margin: 1rem 0;
+        }
       }
     }
   }

@@ -43,6 +43,9 @@ export default {
 p {
   padding: 0 0 1rem 0;
   font-size: 1.5em;
+  @media screen and (max-width: 650px) {
+    font-size: 1.15em;
+  }
 }
 .technologies {
   display: grid;

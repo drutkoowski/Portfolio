@@ -65,12 +65,32 @@ export default {
     color: white;
     display: grid;
     grid-gap: 3rem;
-    min-height: 80vh;
+    height: 80vh;
     grid-template-columns: 1fr 1fr;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      /* WebKit */
+      width: 0;
+      height: 0;
+    }
+    @media screen and (max-width: 600px) {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
     &__description {
       display: flex;
       flex-direction: column;
-      min-height: 80vh;
+      height: 80vh;
+      overflow-y: scroll;
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none;
+      &::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
+      }
     }
     &__images {
       min-height: 80vh;
@@ -90,6 +110,10 @@ export default {
         contrast(103%);
       &:hover {
         transform: scale(1.15);
+      }
+      @media screen and (max-width: 750px) {
+        height: 2rem;
+        width: 2rem;
       }
     }
   }
