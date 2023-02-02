@@ -111,7 +111,7 @@ export default {
     }
   }
   &__image {
-    width: 100%;
+    width: 99%;
     height: 100%;
     border: 2px solid var(--orange);
     @media screen and (max-width: 500px) {
