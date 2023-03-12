@@ -38,8 +38,8 @@
     "converseo": {
       "description": "Converseo is an web app allowing the users to communicate with each other and look for new acquaintances. The connection between users was made using WebSockets, which allows instant interaction."
     },
-    "ecommerce": {
-      "description": "Django Ecommerce is an e-commerce (online store) web application. Thanks to this application users can order products, which might be easily entered by the site administrator (the seller) using the admin panel, which has been specially adapted for this purpose."
+    "mate&chill": {
+      "description": "Mate&Chill is an e-commerce (online store) web application. Thanks to this application users can order products, which can be easily entered by the site administrator (the seller) using the admin panel, which has been specially adapted for this purpose."
     },
     "musicly": {
       "description": "Musicly is a web application for music management. The user has the ability to create an account that allows him/her to add music, as well as to search for other users' tracks, listen to them and comment on them."

@@ -38,8 +38,8 @@
     "converseo": {
       "description": "Converseo to aplikacja webowa umożliwiająca użytkownikom komunikację między sobą i zawieranie nowych znajomości. Połączenie pomiędzy użytkownikami zostało wykonane przy użyciu WebSockets, co umożliwia natychmiastową interakcję."
     },
-    "ecommerce": {
-      "description": "Django Ecommerce to aplikacja typu e-commerce (sklep online). Dzięki niej użytkownicy mogą zamawiać produkty, które są zamieszczane w prosty sposób przez administratora (sprzedawcę), używając panelu administracyjnego, który został specjalnie do tego dostosowany."
+    "mate&chill": {
+      "description": "Mate&Chill to aplikacja internetowa typu e-commerce (sklep internetowy).\nDzięki tej aplikacji użytkownicy mogą zamawiać produkty, które w prosty sposób może wprowadzić administrator strony (sprzedawca) za pomocą specjalnie przystosowanego do tego celu panelu administracyjnego."
     },
     "musicly": {
       "description": "Musicly to aplikacja webowa dla zarządzania muzyką. Użytkownik ma możliwość założenia konta, które pozwala mu na dodawanie muzyki, a także na wyszukiwanie utworów innych użytkowników, ich odsłuchiwanie i komentowanie."
