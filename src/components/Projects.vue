@@ -9,8 +9,8 @@
         <li ref="converseo" @click.prevent="handleChange('Converseo')">
           <span>&#8226;</span> Converseo
         </li>
-        <li ref="ecommerce" @click.prevent="handleChange('Ecommerce')">
-          <span>&#8226;</span> E-commerce
+        <li ref="ecommerce" @click.prevent="handleChange('Mate&Chill')">
+          <span>&#8226;</span> Mate&Chill
         </li>
         <li ref="musicly" @click.prevent="handleChange('Musicly')">
           <span>&#8226;</span> Musicly
@@ -151,33 +151,37 @@ export default {
         this.demoLink = "https://nutri-django.herokuapp.com";
         this.repoLink = "https://github.com/drutkoowski/Nutri-Django";
       }
-      if (projectName === "Ecommerce") {
-        this.name = "Ecommerce";
+      if (projectName === "Mate&Chill") {
+        this.name = "Mate&Chill";
         this.$refs.ecommerce.classList.add("selected");
         this.technologies = [
           "Python",
           "Django",
           "MySQL",
           "HTML5",
-          "Bootstrap",
-          "CSS3",
+          "SASS",
           "Javascript",
-          "Postgres",
+          "Vite",
+          "Vue",
+          "Axios",
+          "Nginx",
+          "Docker",
+          "JWT",
           "AWS",
         ];
         this.images = [
-          "ecommerce0.png",
-          "ecommerce1.png",
-          "ecommerce2.png",
-          "ecommerce3.png",
-          "ecommerce4.png",
-          "ecommerce5.png",
-          "ecommerce6.png",
-          "ecommerce7.png",
+          "mate-chill0.png",
+          "mate-chill1.png",
+          "mate-chill2.png",
+          "mate-chill3.png",
+          "mate-chill4.png",
+          "mate-chill5.png",
+          "mate-chill6.png",
+          "mate-chill7.png",
         ];
         this.demoLink =
-          "http://django-env.eba-f3bedqv2.eu-central-1.elasticbeanstalk.com/accounts/login/";
-        this.repoLink = "https://github.com/drutkoowski/django-ecommerce";
+          "http://18.192.210.224";
+        this.repoLink = "https://github.com/drutkoowski/Mate-Chill#readme";
       }
       if (projectName === "Musicly") {
         this.name = "Musicly";
